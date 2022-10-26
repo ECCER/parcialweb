@@ -1,0 +1,363 @@
+:root {
+    --azul-oscuro : #0D1230;
+    --crema : #AC8D68;
+    --white : #fff;
+    --azul-letra : #0D0925;
+    --azul-team : #070143;
+
+}
+
+*, *::after, *::before {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Vidaloka', serif;
+}
+
+header {
+    background-color: var(--azul-oscuro);
+}
+
+img {
+    width: 100%;
+}
+
+.pf-centra {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+    #menu-main {
+        margin: 0 auto;
+    }
+
+    .nav-link:hover {
+        border-top: red;
+    }
+
+    .nav-link:hover {
+        color: #a28059;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar.navbar-expand-lg.sticky-top {
+        padding-top: 0;
+    }
+    .probando {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .probando .me-auto {
+        margin: unset!important;
+    }
+
+    .nav-link:hover {
+        color: #a28059;
+        border-top: solid 3px #a28059;
+    }
+}
+
+
+.navbar-toggler {
+    background-color: #AC8D68;
+}
+
+.nav-link {
+    padding: 30px 6px;
+    font-size: 16px;
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    font-family: "Vidaloka", serif;
+    text-transform: capitalize;
+    transition: all 0.25s;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/*Busqueda*/
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 991;
+    position: relative;
+    align-items: center;
+}
+
+.header-right .header-search-form-wrapper {
+    position: relative;
+    margin-top: -5px;
+    margin-right: 15px;
+}
+
+.search-toggle-btn {
+    width: 45px;
+    height: 42px;
+    background-color: #AC8D68;
+    line-height: 0.66em;
+    color: #fff;
+    border: 0;
+}
+
+.close-form .theme-btn {
+    padding: 10px 15px;
+}
+
+.theme-btn:hover {
+    background-color: white;
+    color: #a28059;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #0D0925;
+    margin-top: 9px;
+}
+
+h5 {
+    line-height: 60px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.text p {
+    margin-bottom: 5px;
+    margin-top: 0;
+    line-height: 25px;
+    padding-bottom: 5px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #66717A;
+}
+
+.text ul {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.text ul li {
+    padding: 10px 0;
+    padding-left: 40px;
+    position: relative;
+    color: #5a5753;
+    list-style: none;
+}
+
+.text ul li:before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: rgba(172, 141, 104, 0.2);
+    content: "\e64c";
+    border-radius: 50%;
+    font-family: "themify";
+    text-align: center;
+    color: #AC8D68;
+    font-size: 13px;
+}
+
+.text a {
+    margin-top: 10px;
+}
+
+section {
+    padding-top: 120px;
+}
+
+span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.2em;
+    color: #AC8D68;
+}
+.text {
+    padding: 20px 40px;
+}
+
+.busqueda {
+    background-color: #AC8D68;
+    line-height: 0.66em;
+    color: #fff;
+    width: 50px;
+    height: 51px;
+    border: 0;
+}
+
+.booking {
+    background: #AC8D68;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    padding: 15px 45px;
+    border: 0;
+    text-transform: capitalize;
+    z-index: 1;
+    position: relative;
+    font-size: 14px;
+    font-size: calc-rem-value(16);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.banner {
+    background-color: aqua;
+    height: 650px;
+}
+
+.carousel-caption .theme-btn {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.theme-btn, .view-cart-btn {
+    background: #AC8D68;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    padding: 15px 45px;
+    border: 0;
+    text-transform: capitalize;
+    z-index: 1;
+    position: relative;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    max-height: 670px;
+}
+
+.carousel-caption {
+    bottom: 40%;
+
+}
+
+/* talent */
+
+.section-title{
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title h2 {
+    margin-top: 20px;
+    line-height: 46px;
+    position: relative;
+}
+
+.logo-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.people-team {
+    margin-bottom: 30px;
+}
+
+.people-team-img {
+    position: relative;
+}
+
+.people-team-img figcaption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(13, 9, 37, 0.6);
+    display: none;
+    color: var(--color-blanco);
+}
+
+.people-team img {
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.people-team-text {
+    width: 100%;
+    position: unset;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    transform: none;
+    text-align: center;
+    background: #AC8D68;
+    padding: 15px 0;
+}
+
+.people-team-text a h2 {
+    font-family: "Vidaloka", serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 3px;
+    transition: all 0.4s ease-in-out;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.people-team-text a h2:hover{
+    color: #0D0925;
+}
+
+.people-team-text span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--azul-team);
+    color: white;
+    border-top: whitte solid 2px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.derechos {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 18px;
+}
+
+/* Video */
+
+.video {
+    margin: 20px 0px 50px;
+}
